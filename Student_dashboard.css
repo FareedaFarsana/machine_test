@@ -1,0 +1,156 @@
+/* navbar */
+body{
+    background-color: rgb(220, 215, 215) !important;
+}
+.navbar{
+    background-color: rgb(5, 5, 82);
+    padding: 1rem 0;
+}
+.navbar h1{
+    color: white;
+    font-size: 2rem;
+}
+/*form-list */
+.form-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 2rem;
+    margin: 2rem 2rem;
+}   
+.student-form{
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: white;
+}
+.student-form h3{
+    background-color: lightblue;
+    padding: 1rem;
+}
+.student-list{
+    border-radius: 5px;
+    background-color: white;
+}
+.student-list h3{
+    background-color: lightgreen;
+    padding: 1rem;
+}
+.stud-name{
+    border-radius: 4px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.main-one{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(225, 220, 220);
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+.icons{
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 0.5rem;
+}
+.student-form form{
+    padding: 2rem;
+}
+#forms button{
+    display: block;
+    margin: 0 auto;
+}
+
+/* student details */
+.student-details{
+    background-color: white;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    
+}
+.student-details h3{
+    background-color: wheat;
+    padding: 1rem;
+    text-align: center;
+}
+.details{
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.15fr;
+    gap: 1rem;   
+}
+.left-content{
+    margin-left: 2rem;
+}
+.right-content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    margin-right: 2rem;
+    font-size: 14px;
+}
+#update{
+    background-color: wheat;
+    border: none;
+    border-radius: 5px;
+    padding: 0.25rem;
+}
+#delete{
+    background-color: lightblue;
+    border: none;
+    border-radius: 5px;
+    padding: 0.25rem;
+}
+
+/* MOBILE VIEW RESPONSIVE */
+@media (max-width: 768px){
+
+    /* form + list becomes 1 column */
+    .form-list{
+        grid-template-columns: 1fr;
+        margin: 1rem;
+    }
+    /* student details become single column */
+    .details{
+        grid-template-columns: 1fr;
+    }
+    .right-content{
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    /* reduce margins */
+    .middle-content{
+        margin-left: 2rem;
+    }
+}
+
+/* MOBILE-S (small phones) */
+@media (max-width: 360px)
+{
+    .main-one{
+        flex-direction: column;
+    }
+}
+
+/* navbar responsive */
+@media (max-width: 768px)
+{
+    .navbar{
+       padding: 0.6rem 1rem; 
+    }
+    .navbar h1{
+        font-size: 1.5rem !important;
+        width: 100%;
+    }
+}
+@media (max-width: 430px){
+    .navbar{
+        padding: 0.5rem 0.5rem;
+    }
+    .navbar h1{
+        font-size: 1.2rem !important;
+    }
+}

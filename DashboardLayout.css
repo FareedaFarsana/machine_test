@@ -1,0 +1,40 @@
+.main-content{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: auto auto;
+}
+.sidebar{
+    background-color: black;
+    height: 150vh;
+    
+}
+.sidebar a{
+    text-decoration: none;
+    color: white;
+}
+.sidebar ul{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;}
+.right-content{
+    margin-top: 2rem;
+}
+.right-content .p-4{
+    color: white;
+    border-radius: 5%;
+    text-align: center;
+}
+.p-4 h5{
+    border: 1px solid white;
+    max-width: 30%;
+    display: block;
+    margin: 0 auto;
+}
+.right-content img{
+    margin-top: 10%;
+    width: 50%;
+    height: 40%;
+    display: block;
+    margin: 0 auto;
+}
